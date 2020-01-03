@@ -290,7 +290,7 @@ new Vue({
 
 ```html
 <div id="blog-posts-events-demo">
-  <div :style="{ fontSize: postFontSize + 'em' }">
+  <div v-bind::style="{ fontSize: postFontSize + 'em' }">
     <blog-post
       v-for="post in posts"
       v-bind:key="post.id"
